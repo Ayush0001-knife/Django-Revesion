@@ -1,5 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from data.models import ExampleModel
 
 def home(request):
-      return render(request, "home.html")
+      example = ExampleModel.objects.all()
+      context = {
+            'example': example
+      }
+      return render(request,'home.html',context)
