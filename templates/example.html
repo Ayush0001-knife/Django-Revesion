@@ -21,27 +21,10 @@
             <h2>Revesion Project</h2>
       </header>
 
-      <main>
-            <h1>Welcome to Revesion 🚀</h1>
-            <p>This is your Django home page.</p>
-            <p>You have successfully set up Django 🎉</p>
-
-            <!-- Image Section -->
-            <div class="image-container">
-                  <img src="{% static 'images/Image1.jpg' %}" alt="Home Image">
-            </div>
-            {% for i in example %}
-            <h3>{{ i.name }}</h3>
-            <p>{{i.pk}}</p>
-            <p>Age: {{ i.age }}</p>
-            <p>Phone: {{ i.phoneNumber }}</p>
-            {% endfor %}
-      </main>
-
-
-      <footer>
-            © 2026 Revesion | Built with Django
-      </footer>
+      <h3>{{ example.name }}</h3>
+      <p>Age: {{ example.age }}</p>
+      <p>Phone: {{ example.phoneNumber }}</p>
+      <img src="{{ example.photo.url }}" alt="Photo of {{ example.name }}">
 
 </body>
 
