@@ -5,40 +5,52 @@
 
 <head>
       <meta charset="UTF-8">
-      <title>Home | Revesion</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+      <title>Revesion | Home</title>
 
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
       <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
 </head>
 
 <body>
 
-      <header>
-            <h2>Revesion Project</h2>
-      </header>
-
-      <main>
-            <h1>Welcome to Revesion 🚀</h1>
-            <p>This is your Django home page.</p>
-            <p>You have successfully set up Django 🎉</p>
-
-            <!-- Image Section -->
-            <div class="image-container">
-                  <img src="{% static 'images/Image1.jpg' %}" alt="Home Image">
+      <!-- Header -->
+      <nav class="navbar navbar-dark bg-primary">
+            <div class="container">
+                  <span class="navbar-brand mb-0 h1">Revesion</span>
             </div>
-            {% for i in example %}
-            <h3>{{ i.name }}</h3>
-            <p>{{i.pk}}</p>
-            <p>Age: {{ i.age }}</p>
-            <p>Phone: {{ i.phoneNumber }}</p>
-            {% endfor %}
-      </main>
+      </nav>
 
+      <!-- Hero Section -->
+      <section class="hero-section">
 
+            <div class="hero-box">
+
+                  <h1>Organize Your Life 🚀</h1>
+
+                  <p>
+                        Manage your tasks, goals, and productivity in one place.
+                        Stay focused. Stay organized. Stay ahead.
+                  </p>
+
+                  <!-- CTA Button -->
+                  <a href="#" class="btn btn-primary hero-btn">
+                        Go To My Todo List ✅
+                  </a>
+
+                  <!-- Image -->
+                  <div>
+                        <img src="{% static 'images/Image1.jpeg' %}" class="hero-image" alt="Hero Image">
+                  </div>
+
+            </div>
+
+      </section>
+
+      <!-- Footer -->
       <footer>
             © 2026 Revesion | Built with Django
       </footer>

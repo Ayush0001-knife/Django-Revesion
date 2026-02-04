@@ -1,49 +1,51 @@
 body {
-                  font-family: Arial, sans-serif;
-                  background: #f4f6f8;
-                  margin: 0;
-                  padding: 0;
+                  background: linear-gradient(to right, #f8f9fa, #e9ecef);
             }
 
-            header {
-                  background: #0d6efd;
-                  color: white;
-                  padding: 20px;
+            .hero-section {
+                  min-height: 90vh;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
                   text-align: center;
             }
 
-            main {
-                  padding: 40px;
-                  text-align: center;
+            .hero-box {
+                  background: white;
+                  padding: 50px 40px;
+                  border-radius: 15px;
+                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                  max-width: 700px;
             }
 
-            h1 {
-                  color: #333;
+            .hero-box h1 {
+                  font-size: 3rem;
+                  font-weight: bold;
+                  margin-bottom: 20px;
             }
 
-            p {
-                  font-size: 18px;
+            .hero-box p {
+                  font-size: 1.2rem;
                   color: #555;
             }
 
+            .hero-btn {
+                  margin-top: 30px;
+                  padding: 12px 35px;
+                  font-size: 1.1rem;
+                  border-radius: 30px;
+            }
+
+            .hero-image {
+                  margin-top: 30px;
+                  max-width: 300px;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+
             footer {
-                  background: #222;
+                  background: #212529;
                   color: #ccc;
                   text-align: center;
                   padding: 15px;
-                  position: fixed;
-                  bottom: 0;
-                  width: 100%;
             }
-            .image-container {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-}
-
-.image-container img {
-      width: 350px;
-      max-width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
